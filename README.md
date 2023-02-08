@@ -13,3 +13,14 @@ npm run-script build
 ```
 npm publish --access public
 ```
+
+## Jest environment
+
+Add the following to your setup.js:
+
+```javascript
+// WalletconnectV2
+import { TextEncoder, TextDecoder } from 'util'
+global.TextEncoder = TextEncoder
+global.TextDecoder = TextDecoder
+```
