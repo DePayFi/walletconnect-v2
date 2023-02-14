@@ -1,6 +1,6 @@
 {
   "name": "@depay/walletconnect-v2",
-  "version": "2.3.3",
+  "version": "2.4.2",
   "description": "WalletConnect v2 browser pre-built usable in rollup bundles.",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
@@ -30,7 +30,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@walletconnect/core": "^2.3.3",
-    "@walletconnect/sign-client": "^2.3.3"
+    "@walletconnect/core": "^2.4.2",
+    "@walletconnect/sign-client": "^2.4.2"
   }
 }
