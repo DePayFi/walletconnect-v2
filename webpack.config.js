@@ -14,6 +14,16 @@ const umd = {
   module: {
     rules: [
       {
+        test: /\.m?js$/,
+        exclude: /node_modules\/(?!unstorage|@walletconnect)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
         test: /\.js$/,
         use: [
           {
@@ -43,6 +53,16 @@ const esm = {
   },
   module: {
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules\/(?!unstorage|@walletconnect)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
       {
         test: /\.js$/,
         use: [
